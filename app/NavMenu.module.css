@@ -1,13 +1,35 @@
 .nav {
   display: flex;
-  background-color: #1d4ed8;
+  background: linear-gradient(
+    90deg,
+    rgb(53, 170, 224) 0%,
+    rgb(235, 154, 83) 80%
+  );
   color: #fff;
   height: 70px;
   justify-content: space-between;
   align-items: center;
 }
 
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Ensures that this section takes up all the available space on the left */
+}
+.nav ul {
+  background: linear-gradient(
+    90deg,
+    rgb(235, 154, 83) 0%,
+    rgb(53, 170, 224) 100%
+  );
+}
+
+.head {
+  color: #fff;
+}
+
 .logo {
+  color: #fff;
 }
 
 .links {
@@ -25,4 +47,21 @@
 
 .links a {
   color: #fff;
+}
+
+.text {
+  background: linear-gradient(
+    90deg,
+    rgb(247, 165, 90) 0%,
+    rgb(248, 233, 105) 100%
+  );
+  border-radius: 10px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  opacity: 1;
+  will-change: auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: xx-large;
 }

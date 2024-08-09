@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./NavMenu.module.css";
+import { Open_Sans } from "next/font/google";
+const inter = Open_Sans({ subsets: ["latin"] });
 
 export default function NavMenu() {
   return (
@@ -13,7 +15,7 @@ export default function NavMenu() {
           alt="BD Logo"
         />
       </Link>
-
+      <h1 className={styles.text}>BD-SPACE</h1>
       <ul className={styles.nav}>
         <li className={styles.links}>
           <Link href={"/about"}>About</Link>
